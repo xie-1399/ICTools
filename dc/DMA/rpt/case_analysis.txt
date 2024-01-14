@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : case_analysis
+Design : DMA
+Version: O-2018.06-SP1
+Date   : Sun Jan 14 16:23:23 2024
+****************************************
+
+
+    Pin name                           Case analysis value
+--------------------------------------------------------------------------------
+    fifo/U22/B2                        1
+    fifo/U36/C                         1
+    fifo/U234/A3                       0
+    fifo/U588/B1                       1
+    fifo/U761/B1                       1
+    fifo/U771/A2                       0
+    fifo/U809/A2                       0
+    fifo/U866/A3                       0
+    fifo/U868/A3                       0
+    fifo/U1601/A1                      0
+    fifo/U1602/A1                      0
+    fifo/U1603/A1                      0
+    fifo/U1604/A1                      0
+    fifo/U1606/A1                      0
+    fifo/U1607/A1                      0
+    fifo/U1608/A1                      0
+    fifo/U1616/I                       0
+    fifo/U1616/ZN                      1
+    fifo/U2108/C                       1
+    fifo/U2151/A2                      1
+    io_apb3_PREADY                     1
+    io_apb3_PSLVERROR                  0
+    io_axi4_ar_payload_id[0]           0
+    io_axi4_ar_payload_id[1]           0
+    io_axi4_ar_payload_id[2]           0
+    io_axi4_ar_payload_size[0]         0
+    io_axi4_ar_payload_size[1]         1
+    io_axi4_ar_payload_size[2]         0
+    io_axi4_aw_payload_id[0]           0
+    io_axi4_aw_payload_id[1]           0
+    io_axi4_aw_payload_id[2]           0
+    io_axi4_aw_payload_size[0]         0
+    io_axi4_aw_payload_size[1]         1
+    io_axi4_aw_payload_size[2]         0
+
+    Pin name                           Internal Logic constant 
+--------------------------------------------------------------------------------
+    U660/Z                             1
+    U661/Z                             0
+    fifo/U1617/Z                       0
+
+1

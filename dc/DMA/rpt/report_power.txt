@@ -1,0 +1,53 @@
+Loading db file '/media/xxl/ICTools/dc/DMA/lib/scc55nll_hd_hvt_ss_v0p81_125c_basic.db'
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+        -verbose
+Design : DMA
+Version: O-2018.06-SP1
+Date   : Sun Jan 14 16:23:28 2024
+****************************************
+
+
+Library(s) Used:
+
+    scc55nll_hd_hvt_ss_v0p81_125c_basic (File: /media/xxl/ICTools/dc/DMA/lib/scc55nll_hd_hvt_ss_v0p81_125c_basic.db)
+
+
+Operating Conditions: ss_v0p81_125c   Library: scc55nll_hd_hvt_ss_v0p81_125c_basic
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 0.81 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  =   4.2207 mW  (100%)
+  Net Switching Power  =  20.4738 uW    (0%)
+                         ---------
+Total Dynamic Power    =   4.2412 mW  (100%)
+
+Cell Leakage Power     = 665.2200 nW
+
+                 Internal         Switching           Leakage            Total                         Cell
+Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
+---------------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+register           4.2069        2.2304e-05            0.3863            4.2073  (  99.18%)            2346
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+combinational  1.3890e-02        2.0451e-02            0.2789        3.4621e-02  (   0.82%)            4601
+---------------------------------------------------------------------------------------------------------
+Total              4.2207 mW     2.0474e-02 mW         0.6652 uW         4.2419 mW
+1

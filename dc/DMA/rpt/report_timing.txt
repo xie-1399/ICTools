@@ -1,0 +1,95 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : DMA
+Version: O-2018.06-SP1
+Date   : Sun Jan 14 16:23:22 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_v0p81_125c   Library: scc55nll_hd_hvt_ss_v0p81_125c_basic
+Wire Load Model Mode: top
+
+  Startpoint: io_axi4_w_ready
+              (input port clocked by clk)
+  Endpoint: fifo/_zz_logic_ram_port0_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        3.00       3.00 r
+  io_axi4_w_ready (in)                                              0.15      0.00       3.00 r
+  io_axi4_w_ready (net)                         2         0.01                0.00       3.00 r
+  U363/A1 (HVT_NAND2HDV24)                                          0.15      0.00       3.00 r
+  U363/ZN (HVT_NAND2HDV24)                                          0.17      0.19       3.19 f
+  n463 (net)                                    1         0.00                0.00       3.19 f
+  U365/B1 (HVT_NOR2BHDV8)                                           0.17      0.00       3.19 f
+  U365/ZN (HVT_NOR2BHDV8)                                           0.37      0.39       3.58 r
+  fifo_io_pop_ready (net)                       4         0.00                0.00       3.58 r
+  fifo/io_pop_ready (StreamFifo)                                              0.00       3.58 r
+  fifo/io_pop_ready (net)                                 0.00                0.00       3.58 r
+  fifo/U999/A1 (HVT_NAND3HDV4)                                      0.37      0.00       3.58 r
+  fifo/U999/ZN (HVT_NAND3HDV4)                                      0.67      0.60       4.18 f
+  fifo/n2289 (net)                              3         0.00                0.00       4.18 f
+  fifo/U1001/C (HVT_AO211HDV4)                                      0.67      0.00       4.18 f
+  fifo/U1001/Z (HVT_AO211HDV4)                                      0.40      1.49       5.67 f
+  fifo/n2276 (net)                              2         0.00                0.00       5.67 f
+  fifo/U748/A1 (HVT_XOR2HDV4)                                       0.40      0.00       5.67 f
+  fifo/U748/Z (HVT_XOR2HDV4)                                        0.32      0.90       6.57 f
+  fifo/n2408 (net)                              2         0.00                0.00       6.57 f
+  fifo/U771/A1 (HVT_NOR2HDV8)                                       0.32      0.00       6.57 f
+  fifo/U771/ZN (HVT_NOR2HDV8)                                       0.32      0.37       6.94 r
+  fifo/logic_popPtr_valueNext[3] (net)          2         0.00                0.00       6.94 r
+  fifo/U61/I (HVT_INHDV8)                                           0.32      0.00       6.94 r
+  fifo/U61/ZN (HVT_INHDV8)                                          0.16      0.27       7.21 f
+  fifo/n1273 (net)                              5         0.01                0.00       7.21 f
+  fifo/U582/I (HVT_CLKINHDV6)                                       0.16      0.00       7.21 f
+  fifo/U582/ZN (HVT_CLKINHDV6)                                      0.14      0.17       7.38 r
+  fifo/n677 (net)                               1         0.00                0.00       7.38 r
+  fifo/U53/A1 (HVT_AND2HDV16)                                       0.14      0.00       7.38 r
+  fifo/U53/Z (HVT_AND2HDV16)                                        0.21      0.50       7.88 r
+  fifo/n804 (net)                               6         0.01                0.00       7.88 r
+  fifo/U602/A1 (HVT_CLKAND2HDV4)                                    0.21      0.00       7.88 r
+  fifo/U602/Z (HVT_CLKAND2HDV4)                                     0.23      0.50       8.38 r
+  fifo/n573 (net)                               4         0.00                0.00       8.38 r
+  fifo/U26/C (HVT_OA221HDV0)                                        0.23      0.00       8.38 r
+  fifo/U26/Z (HVT_OA221HDV0)                                        0.40      1.45       9.83 r
+  fifo/n990 (net)                               1         0.00                0.00       9.83 r
+  fifo/U721/C (HVT_OAI221HDV4)                                      0.40      0.00       9.83 r
+  fifo/U721/ZN (HVT_OAI221HDV4)                                     0.55      0.61      10.44 f
+  fifo/n1749 (net)                              1         0.00                0.00      10.44 f
+  fifo/U710/A1 (HVT_OAI32HDV4)                                      0.55      0.00      10.44 f
+  fifo/U710/ZN (HVT_OAI32HDV4)                                      0.59      0.60      11.04 r
+  fifo/n714 (net)                               1         0.00                0.00      11.04 r
+  fifo/U975/A1 (HVT_NAND3BHDV4)                                     0.59      0.00      11.04 r
+  fifo/U975/ZN (HVT_NAND3BHDV4)                                     0.20      0.65      11.70 r
+  fifo/N45 (net)                                1         0.00                0.00      11.70 r
+  fifo/_zz_logic_ram_port0_reg[5]/D (HVT_DQHDV4)                    0.20      0.00      11.70 r
+  data arrival time                                                                     11.70
+
+  clock clk (rise edge)                                                       2.50       2.50
+  clock network delay (ideal)                                                 0.00       2.50
+  fifo/_zz_logic_ram_port0_reg[5]/CK (HVT_DQHDV4)                             0.00       2.50 r
+  library setup time                                                         -0.47       2.03
+  data required time                                                                     2.03
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     2.03
+  data arrival time                                                                    -11.70
+  ----------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -9.66
+
+
+1

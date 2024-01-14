@@ -1,0 +1,18 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -loops
+        -max_paths 1
+Design : DMA
+Version: O-2018.06-SP1
+Date   : Sun Jan 14 16:23:28 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_v0p81_125c   Library: scc55nll_hd_hvt_ss_v0p81_125c_basic
+Wire Load Model Mode: top
+No loops.
+
+1

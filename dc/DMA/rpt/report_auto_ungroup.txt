@@ -1,0 +1,11 @@
+Information: Use of command 'report_auto_ungroup' is not recommended. This command will be obsolete in a future release. (INFO-103)
+ 
+****************************************
+Report : Auto Ungrouping
+Design : DMA
+Version: O-2018.06-SP1
+Date   : Sun Jan 14 16:23:28 2024
+****************************************
+
+no auto_ungroup done for this design
+1

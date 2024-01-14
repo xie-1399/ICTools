@@ -1,0 +1,47 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : DMA
+Version: O-2018.06-SP1
+Date   : Sun Jan 14 16:23:22 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_v0p81_125c   Library: scc55nll_hd_hvt_ss_v0p81_125c_basic
+Wire Load Model Mode: top
+
+  Startpoint: readValid_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_axi4_ar_valid_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                0.00000    0.00000
+  clock network delay (ideal)                          0.00000    0.00000
+  readValid_reg/CK (HVT_DRNQHDV0)                      0.00000 #  0.00000 r
+  readValid_reg/Q (HVT_DRNQHDV0)                       1.53721    1.53721 r
+  U656/ZN (HVT_NOR4BHDV0)                              0.28525    1.82245 f
+  io_axi4_ar_valid_reg/D (HVT_DRNQHDV0)                0.00000    1.82245 f
+  data arrival time                                               1.82245
+
+  clock clk (rise edge)                                0.00000    0.00000
+  clock network delay (ideal)                          0.00000    0.00000
+  io_axi4_ar_valid_reg/CK (HVT_DRNQHDV0)               0.00000    0.00000 r
+  library hold time                                    0.18199    0.18199
+  data required time                                              0.18199
+  --------------------------------------------------------------------------
+  data required time                                              0.18199
+  data arrival time                                              -1.82245
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1.64047
+
+
+1

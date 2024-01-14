@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : area
+Design : DMA
+Version: O-2018.06-SP1
+Date   : Sun Jan 14 16:23:22 2024
+****************************************
+
+Library(s) Used:
+
+    scc55nll_hd_hvt_ss_v0p81_125c_basic (File: /media/xxl/ICTools/dc/DMA/lib/scc55nll_hd_hvt_ss_v0p81_125c_basic.db)
+
+Number of ports:                         1160
+Number of nets:                          7950
+Number of cells:                         6963
+Number of combinational cells:           4604
+Number of sequential cells:              2346
+Number of macros/black boxes:               0
+Number of buf/inv:                       1475
+Number of references:                     110
+
+Combinational area:               8851.359933
+Buf/Inv area:                     2005.639986
+Noncombinational area:           18018.840067
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 26870.200000
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-     Noncombi-   Black-
+                                  Total       Total    national   national    boxes   Design
+--------------------------------  ----------  -------  ---------  ----------  ------  -------------------------
+DMA                               26870.2000    100.0   934.9200   1809.3600  0.0000  DMA
+add_152_aco                         441.2800      1.6   441.2800      0.0000  0.0000  DMA_DW01_add_J3_0
+add_245_aco                         444.0800      1.7   444.0800      0.0000  0.0000  DMA_DW01_add_J4_0
+add_471                              35.2800      0.1    35.2800      0.0000  0.0000  DMA_DW01_inc_J48_0
+add_511                             287.0000      1.1   287.0000      0.0000  0.0000  DMA_DW01_add_J34_0
+add_517                             286.1600      1.1   286.1600      0.0000  0.0000  DMA_DW01_add_J33_0
+fifo                              21857.9201     81.3  5544.8400  16209.4801  0.0000  StreamFifo
+fifo/sub_610                         51.8000      0.2    51.8000      0.0000  0.0000  StreamFifo_DW01_sub_J49_0
+fifo/sub_686                         51.8000      0.2    51.8000      0.0000  0.0000  StreamFifo_DW01_sub_J50_0
+mult_add_152_aco                     73.0800      0.3    73.0800      0.0000  0.0000  DMA_DW_mult_uns_J63_0
+mult_add_245_aco                     95.7600      0.4    95.7600      0.0000  0.0000  DMA_DW_mult_uns_J64_0
+r399                                 48.1600      0.2    48.1600      0.0000  0.0000  DMA_DW01_inc_J67_0
+sub_510                             270.7600      1.0   270.7600      0.0000  0.0000  DMA_DW01_sub_J19_0
+sub_516                             286.4400      1.1   286.4400      0.0000  0.0000  DMA_DW01_sub_J18_0
+--------------------------------  ----------  -------  ---------  ----------  ------  -------------------------
+Total                                                  8851.3599  18018.8401  0.0000
+
+1

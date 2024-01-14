@@ -1,0 +1,84 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : qor
+Design : DMA
+Version: O-2018.06-SP1
+Date   : Sun Jan 14 16:23:23 2024
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              14.00
+  Critical Path Length:          8.70
+  Critical Path Slack:          -9.66
+  Critical Path Clk Period:      2.50
+  Total Negative Slack:     -24172.04
+  No. of Violating Paths:     4464.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         13
+  Hierarchical Port Count:        879
+  Leaf Cell Count:               6950
+  Buf/Inv Cell Count:            1475
+  Buf Cell Count:                 150
+  Inv Cell Count:                1325
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      4604
+  Sequential Cell Count:         2346
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     8851.359933
+  Noncombinational Area: 18018.840067
+  Buf/Inv Area:           2005.639986
+  Total Buffer Area:           249.20
+  Total Inverter Area:        1756.44
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             26870.200000
+  Design Area:           26870.200000
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          7187
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: simon-SERVER
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                   13.88
+  Logic Optimization:                310.19
+  Mapping Optimization:              967.06
+  -----------------------------------------
+  Overall Compile Time:             1300.46
+  Overall Compile Wall Clock Time:   180.64
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 9.66  TNS: 24172.04  Number of Violating Paths: 4464
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

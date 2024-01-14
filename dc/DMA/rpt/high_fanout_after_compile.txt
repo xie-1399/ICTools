@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : net fanout
+        -high_fanout
+Design : DMA
+Version: O-2018.06-SP1
+Date   : Sun Jan 14 16:23:28 2024
+****************************************
+
+
+Operating Conditions: ss_v0p81_125c   Library: scc55nll_hd_hvt_ss_v0p81_125c_basic
+Wire Load Model Mode: top
+
+
+Attributes:
+   dr - drc disabled
+    c - annotated capacitance
+    d - dont_touch
+    i - ideal_net
+    I - ideal_network
+    p - includes pin load
+    r - annotated resistance
+    h - high fanout
+
+Net                 Fanout   Attributes   Capacitance   Driver
+--------------------------------------------------------------------------------
+clk                   2346   dr, h         1001.00      clk
+1
